@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/table.css">
+</head>
+<body>
+ 
+
+ 
+
+<table>
+    {{$login}}
+    @foreach ($manager as $manager)
+    
+       
+      
+            {{$manager->id}}
+      
+      
+          {{$manager->username}}
+       
+  
+          {{$manager->password}}
+           
+      
+   
+    
+
+
+
+    @endforeach
+    <a href="section">SHOW ALL SECTION</a>
+    
+
+
+
+
+  
+</body>
+</html>

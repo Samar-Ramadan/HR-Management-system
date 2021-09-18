@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.nav{
+    background-color:rgb(26, 51, 51) ;
+    display: flex;
+    justify-content: flex-start;
+}
+.nav ul{
+    list-style: none;
+    margin:auto;
+}
+.nav ul li{
+    display: inline-block;
+    padding:5px;
+    border-radius: 4px;
+}
+.nav ul li a{
+    padding-left: 10px;
+    color: white;
+    text-decoration: none;
+
+}
+#btnmenu{
+    display: none;
+    color: white;
+}
+.nav .logAndSign{
+    margin-top:auto;
+    margin-bottom: auto;
+}
+.foot{
+    background-color:rgb(26, 51, 51) ;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    
+}
+.foot .teamName{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 10px;
+    font-family:Ruslan Display;
+    line-height: 33px;
+   
+}
+.foot ul{
+    list-style: none;
+    margin-top: 10px;
+}
+.foot ul li{
+    display: inline-block;
+    padding:5px;
+    
+}
+.foot ul li a{
+    text-decoration: none;
+    padding:20px;
+    color: white;
+    font-weight: bold;
+}
+.foot ul li a:hover{
+    background-color: rgb(24, 121, 121);
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+}
+.sidebar ul .logAndSign{
+    display: none;
+}
+@media only screen and (max-width: 845px){
+    
+    .nav{
+        justify-content: space-between;
+    }
+    .nav ul{
+        margin-bottom: -2500px;
+    }
+    .nav ul li{
+        display: block;
+    }
+    #btnmenu{
+        display: block;
+    }
+    .sidebar{
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width: 530px){
+    .nav .logAndSign{
+        display: none;
+    }
+    .sidebar ul .logAndSign{
+        display: block;
+    }
+}
